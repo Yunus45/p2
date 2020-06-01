@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --marron : #dfb20e;
+    --jaune : #ffca04;
+    --darkgrey: #404040;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--darkgrey);
+}
+
+header img {
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid var(--marron);
+}
+
+header aside {
+    text-align: center;
+}
+header span {
+    color: var(--jaune);
+}
+
+main {
+    padding-left: 1rem;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+header h3:after {content: " ";display: block;border: 1px solid var(--jaune);width: 3rem;}
+
+
+conteneur > aside {
+    background-color: #feca07;
+}
+conteneur li aside:before {
+  content: "\f111";
+  font-family:FontAwesome;
+  margin-right: .5rem;
+  color: var(--jaune);
+  }
+
+conteneur li:first-of-type aside:before {
+  content: "\f058";
+  }
+
+conteneur li aside {
+  display: block;
+}
+
+where {
+  display: block;
+}
+
+conteneur aside h3 {
+  /* padding-left: 1rem; */
+  background-color: var(--darkgrey);
+  color: var(--jaune);
+  text-align: center;
+}
+
+conteneur section > p {
+  padding: 1rem;
+  text-align: justify;
+}
+
+conteneur h3 {
+  border-bottom: 1px solid var(--jaune);
+}
+
+conteneur section:first-of-type h3:before {
+  content:"\f19d";
+  font-family:FontAwesome;
+  color:var(--jaune);
+}
+
+conteneur section:nth-of-type(2) h3:before {
+  content:"\f0f2";
+  font-family:FontAwesome;
+  color:var(--jaune);
+}
+
+conteneur aside ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  padding-left: 1rem;
+}
+main {
+    width: 80vw;
+}
+
+
+
+main aside {
+    /* width: 300px; */
+}
+
+main h4 {
+    margin-top: 0;
+}
+
+main h3 {
+	/* margin-left: 40px; */
+}
+section aside {
+    background-color: initial;
+}
+
+loisirs {
+  display: flex;
+  justify-content: space-around;
+}
+
+loisirs i {
+  border: 1px solid;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen AND (min-width:768px){
+    header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+aside {
+    background-color: var(--jaune);
+    max-width: 300px;
+}
+
+header > *{
+    padding-top:2rem;
+}
+conteneur {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+conteneur aside {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    justify-content: space-between;
+}
+main li {
+    display: flex;
+}
+li aside {
+    width: 20%;
+}
+}
