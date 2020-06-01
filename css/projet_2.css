@@ -52,7 +52,7 @@ conteneur li aside:before {
 }
 
 conteneur li:first-of-type aside:before {
-  content: "\f058";
+  content: "\f192";
 }
 
 conteneur li aside {
@@ -79,16 +79,22 @@ conteneur h3 {
   border-bottom: 1px solid var(--jaune);
 }
 
-conteneur section:first-of-type h3:before {
-  content: "\f19d";
+conteneur h3:before {
   font-family: FontAwesome;
   color: var(--jaune);
+  margin-right: .5rem;
 }
 
-conteneur section:nth-of-type(2) h3:before {
+conteneur main section:first-of-type h3:before {
+  content: "\f19d";
+}
+
+conteneur main section:nth-of-type(2) h3:before {
   content: "\f0f2";
-  font-family: FontAwesome;
-  color: var(--jaune);
+}
+
+conteneur main section:last-of-type h3:before {
+  content: "\f040";
 }
 
 conteneur aside ul {
@@ -105,16 +111,26 @@ main aside {
   /* width: 300px; */
 }
 
+main article poste {
+  display: block;
+  font-weight: bold;
+}
+
 main h4 {
   margin-top: 0;
 }
 
-main h3 {
-  /* margin-left: 40px; */
+main h6 {
+  font-size: 1rem;
+  margin: .5rem 0;
 }
 
 section aside {
   background-color: initial;
+}
+
+section:last-of-type {
+  padding-bottom: 1rem;
 }
 
 loisirs {
@@ -132,6 +148,11 @@ loisirs i {
   align-items: center;
 }
 
+infos {
+  display: block;
+  padding-left: 2rem;
+}
+
 @media screen AND (min-width:768px) {
   header {
     display: flex;
@@ -141,6 +162,10 @@ loisirs i {
   aside {
     background-color: var(--jaune);
     max-width: 300px;
+  }
+  aside ul li {
+    display: flex;
+    padding: 1em;
   }
   header>* {
     padding-top: 2rem;
@@ -161,5 +186,12 @@ loisirs i {
   }
   li aside {
     width: 20%;
+  }
+  conteneur main section:last-of-type infos {
+    display: flex;
+    padding-left: initial;
+  }
+  article {
+    width: 50%;
   }
 }
