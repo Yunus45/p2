@@ -1,54 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-
-:root{
-    --marron : #dfb20e;
-    --jaune : #ffca04;
-    --darkgrey: #404040;
+:root {
+  --marron: #dfb20e;
+  --jaune: #ffca04;
+  --darkgrey: #404040;
 }
 
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--darkgrey);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--darkgrey);
 }
 
 header img {
-    width: 50%;
-    border-radius: 50%;
-    border: 2px solid var(--marron);
+  width: 50%;
+  border-radius: 50%;
+  border: 2px solid var(--marron);
 }
 
 header aside {
-    text-align: center;
+  text-align: center;
 }
+
 header span {
-    color: var(--jaune);
+  color: var(--jaune);
 }
 
 main {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 h1 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
-header h3:after {content: " ";display: block;border: 1px solid var(--jaune);width: 3rem;}
-
-
-conteneur > aside {
-    background-color: #feca07;
+header h3:after {
+  content: " ";
+  display: block;
+  border: 1px solid var(--jaune);
+  width: 3rem;
 }
+
+conteneur>aside {
+  background-color: #feca07;
+}
+
 conteneur li aside:before {
   content: "\f111";
-  font-family:FontAwesome;
+  font-family: FontAwesome;
   margin-right: .5rem;
   color: var(--jaune);
-  }
+}
 
 conteneur li:first-of-type aside:before {
   content: "\f058";
-  }
+}
 
 conteneur li aside {
   display: block;
@@ -65,7 +70,7 @@ conteneur aside h3 {
   text-align: center;
 }
 
-conteneur section > p {
+conteneur section>p {
   padding: 1rem;
   text-align: justify;
 }
@@ -75,15 +80,15 @@ conteneur h3 {
 }
 
 conteneur section:first-of-type h3:before {
-  content:"\f19d";
-  font-family:FontAwesome;
-  color:var(--jaune);
+  content: "\f19d";
+  font-family: FontAwesome;
+  color: var(--jaune);
 }
 
 conteneur section:nth-of-type(2) h3:before {
-  content:"\f0f2";
-  font-family:FontAwesome;
-  color:var(--jaune);
+  content: "\f0f2";
+  font-family: FontAwesome;
+  color: var(--jaune);
 }
 
 conteneur aside ul {
@@ -91,25 +96,25 @@ conteneur aside ul {
   padding-inline-start: 0;
   padding-left: 1rem;
 }
+
 main {
-    width: 80vw;
+  width: 80vw;
 }
 
-
-
 main aside {
-    /* width: 300px; */
+  /* width: 300px; */
 }
 
 main h4 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 main h3 {
-	/* margin-left: 40px; */
+  /* margin-left: 40px; */
 }
+
 section aside {
-    background-color: initial;
+  background-color: initial;
 }
 
 loisirs {
@@ -127,36 +132,34 @@ loisirs i {
   align-items: center;
 }
 
-@media screen AND (min-width:768px){
-    header {
+@media screen AND (min-width:768px) {
+  header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-}
-aside {
+  }
+  aside {
     background-color: var(--jaune);
     max-width: 300px;
-}
-
-header > *{
-    padding-top:2rem;
-}
-conteneur {
+  }
+  header>* {
+    padding-top: 2rem;
+  }
+  conteneur {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-}
-conteneur aside {
-  
+  }
+  conteneur aside {
     display: flex;
     flex-direction: column;
     justify-content: end;
     justify-content: space-between;
-}
-main li {
+  }
+  main li {
     display: flex;
-}
-li aside {
+  }
+  li aside {
     width: 20%;
-}
+  }
 }
