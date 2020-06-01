@@ -40,22 +40,22 @@ header h3:after {
   width: 3rem;
 }
 
-conteneur>aside {
+.conteneur>aside {
   background-color: #feca07;
 }
 
-conteneur li aside:before {
+.conteneur li aside:before {
   content: "\f111";
   font-family: FontAwesome;
   margin-right: .5rem;
   color: var(--jaune);
 }
 
-conteneur li:first-of-type aside:before {
+.conteneur li:first-of-type aside:before {
   content: "\f192";
 }
 
-conteneur li aside {
+.conteneur li aside {
   display: block;
 }
 
@@ -63,41 +63,41 @@ where {
   display: block;
 }
 
-conteneur aside h3 {
+.conteneur aside h3 {
   /* padding-left: 1rem; */
   background-color: var(--darkgrey);
   color: var(--jaune);
   text-align: center;
 }
 
-conteneur section>p {
+.conteneur section>p {
   padding: 1rem;
   text-align: justify;
 }
 
-conteneur h3 {
+.conteneur h3 {
   border-bottom: 1px solid var(--jaune);
 }
 
-conteneur h3:before {
+.conteneur h3:before {
   font-family: FontAwesome;
   color: var(--jaune);
   margin-right: .5rem;
 }
 
-conteneur main section:first-of-type h3:before {
+.conteneur main section:first-of-type h3:before {
   content: "\f19d";
 }
 
-conteneur main section:nth-of-type(2) h3:before {
+.conteneur main section:nth-of-type(2) h3:before {
   content: "\f0f2";
 }
 
-conteneur main section:last-of-type h3:before {
+.conteneur main section:last-of-type h3:before {
   content: "\f040";
 }
 
-conteneur aside ul {
+.conteneur aside ul {
   list-style-type: none;
   padding-inline-start: 0;
   padding-left: 1rem;
@@ -170,12 +170,12 @@ infos {
   header>* {
     padding-top: 2rem;
   }
-  conteneur {
+  .conteneur {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
   }
-  conteneur aside {
+  .conteneur aside {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -187,7 +187,7 @@ infos {
   li aside {
     width: 20%;
   }
-  conteneur main section:last-of-type infos {
+  .conteneur main section:last-of-type infos {
     display: flex;
     padding-left: initial;
   }
